@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.anchor {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  margin-left: 3rem;
+  color: white;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.page-1 {
+  background-image: url('images/page_1_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-1 > .header,
+.page-1 > .footer,
+.page-3 > .footer {
+  padding: 1rem 16rem;
+  justify-content: space-between;
+}
+
+.page-3 > .footer {
+  padding: 0rem 16rem;
+}
+
+.page-2 > .header,
+.page-3 > .header,
+.page-2 > .sub-header {
+  margin: 0rem 16rem;
+}
+
+.page-2 > .sub-header {
+  padding: 0 6rem;
+  color: #1e3f66;
+}
+
+.page-3 > .sub-header {
+  padding: 0rem 18rem;
+}
+
+.page-1 > .footer {
+  background-color: white;
+  margin-top: auto;
+}
+
+.footer > ul > li {
+  color: black;
+  border-bottom: 1px solid #00008b;
+}
+
+.page-2 {
+  background-image: url('images/page_2_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-2 > .footer {
+  background-color: #1e3f66;
+  opacity: 0.7;
+  margin-top: auto;
+  padding: 1rem 16rem;
+}
+
+.page-2 > .footer > img {
+  opacity: 1;
+  background-color: #1e3f66;
+}
+
+.page-3 {
+  height: 100vh;
+}
+
+.page-3-image {
+  background-image: url('images/page_3_bg.png');
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 60vh;
+}
+
+.page-3 > .header {
+  height: 25vh;
+  justify-content: space-between;
+}
+
+.page-3 > .sub-header {
+  background-image: url('images/page-3-header.jpg');
+  background-position: center;
+  height: 5vh;
+}
+
+.page-3 > .footer {
+  background-image: url('images/page-3-footer.jpg');
+  background-position: center;
+  height: 10vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 88%;
+}
+
+.copyright {
+  letter-spacing: 1px;
+  font-style: italic;
+  color: #528aae;
+}
+
+.content {
+  font-family: Arial narrow;
+  margin-right: 2rem;
+}
+
+.content > h2 {
+  color: darkgray;
+  font-size: 10rem;
+}
+
+.content > span {
+  color: #1e3f66;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-left: -10px;
+}
+
+.page-3 > .header > p {
+  color: gray;
+}
+
+.blog .carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -25px;
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+  background: #a3a3a3;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.blog .carousel-indicators .active {
+  background: #707070;
+}
